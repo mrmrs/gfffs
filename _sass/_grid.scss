@@ -1,8 +1,8 @@
 .single-column {
   margin:0 auto;
-  padding:1em;
+  padding:1em 4em;
   width:100%;
-  max-width:768px!important;
+  max-width:1280px!important;
 }
 
 @mixin breakpoint($viewport-width) {
