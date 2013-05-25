@@ -13,8 +13,8 @@ url: "http://gfffs.com"
 
 cloudfront: "http://d13i5ryuluqz5i.cloudfront.net"
 
-  # Your UA tracking number (i.e 35858753-1) for Google Analytics. 
-  # If you comment this out, or don't fill out this parameter - Google analytics won't be included. 
+# Your UA tracking number (i.e 35858753-1) for Google Analytics. 
+# If you comment this out, or don't fill out this parameter - Google analytics won't be included. 
 googleID: 39407862-1
 
 # Pagination variable for how many posts to show in a list
@@ -29,14 +29,8 @@ permalink: pretty
 # /blog/:yearr/:month/:day/:title                 => /blog/2009/04/29/slap-chop/index.html
 
 # If you want to display social nav - fill out the appropriate handles. Delete or comment out unneeded networks. 
-github: ""
-twitter: ""
-instagram: ""
-dribbble: ""
-soundcloud: ""
-flickr: ""
 
 # UnComment once you have pygments installed. Used for code syntax highlighting.
 #pygments: true
 
-exclude: Rakefile
+exclude: [Rakefile]
