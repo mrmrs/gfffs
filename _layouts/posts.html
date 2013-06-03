@@ -1,6 +1,6 @@
 {% include _head.html %}
 <body>
-  <article class="mt-2 post single-column">
+  <article>
     <!-- This is where the title: in your front matter gets dropped in.-->
     <h1>
       {{page.title}}
@@ -8,11 +8,9 @@
     <!-- This is where post content lives -->
       {{content}}
     <!-- end of post content -->
-     <footer class="mt-2">
+     <footer>
       {% if page.author %}
-      <p class="meta author">
-      <time  class="meta" datetime="{{page.date}}">{{page.date | date: "%d %B %Y"}}</time><br />
-      By: <a href="" rel="author">{{page.author}}</a></p>
+      <p> By: <a href="" rel="author">{{page.author}}</a></p>
       {% endif %}
     </footer>
   </article>
