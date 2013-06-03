@@ -2,28 +2,27 @@
 layout: default
 ---
 
-<section class="single-column">
-  <article class="post">
+<main>
+  <article class="post marbo2">
     {% for post in site.posts limit: 1 %}
-       <h1 class="ct h1">{{ post.title }}</h1>
       {{ post.content }}
+        <div class="content marto">
+          <h1><a href="{{post.url}}" class="title-link">{{ post.title }}</a></h1>
+       </div>
     {% endfor %}
   </article>
-  <section class="mt-4">
-    <article>
-      <ul class="large-list ct mt-1">
-        {% for post in paginator.posts %}
-          <li>
-            <a href="{{ post.url }}" title="{{post.title}}">
-              <date datetime="{{post.date}}" class="meta">
-                {{ post.date | date_to_long_string }}
-              </date>
-              {{ post.title }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-      <p class="ct"><a href="{{site.url}}/archives/" class="ct" title="Archives">...</a></p>
-    </article>
-  </section>
+</main>
+<section>
+  <article class="content">
+    <h1 class="small caps title">OTHER HI-DEF GIFS</h1>
+    <ul class="large-list">
+      {% for post in paginator.posts %}
+        <li class="hide-first">
+          <a href="{{ post.url }}" title="{{post.title}}">
+            <p class="h2">{{ post.title }}</p>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </article>
 </section>

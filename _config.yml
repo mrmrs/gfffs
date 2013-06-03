@@ -18,7 +18,7 @@ cloudfront: "http://d13i5ryuluqz5i.cloudfront.net"
 googleID: 39407862-1
 
 # Pagination variable for how many posts to show in a list
-paginate: 5
+paginate: 10
 
 # Style of permalinks
 permalink: pretty

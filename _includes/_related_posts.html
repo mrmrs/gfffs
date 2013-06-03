@@ -1,13 +1,15 @@
-<article>
-  <h1>Related Posts</h1>
+<article class="marbo">
+  <div class="content">
+  <h1 class="small caps marbo">More Gifs</h1>
   <ul>
   {% for post in site.related_posts limit: 3 %}
-    <li>
+    <li class="marbo">
       <a href="{{ post.url }}" title="{{post.title}}">
-        <span>{{ post.date | date_to_long_string }}</span>
+        <span class="small db title caps">{{ post.date | date_to_long_string }}</span>
           {{ post.title }}
       </a>
     </li>
   {% endfor %}
   </ul>
+</div>
 </article>
