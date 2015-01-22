@@ -3,23 +3,23 @@ layout: default
 ---
 
 <main>
-  <article class="post marbo2">
+  <article class="center mw8">
     {% for post in site.posts limit: 1 %}
       {{ post.content }}
-        <div class="content marto">
-          <h1><a href="{{post.url}}" class="title-link">{{ post.title }}</a></h1>
+        <div class="pas pan-l">
+          <h1 class="tc book ttu small"><a href="{{post.url}}" class="link">{{ post.title }}</a></h1>
        </div>
     {% endfor %}
   </article>
 </main>
-<section>
-  <article class="content">
-    <h1 class="small caps title">OTHER HI-DEF GIFS</h1>
-    <ul class="large-list">
+<section class="center mw8 pbl pbx-ns">
+  <article class="pas pan-l">
+    <h1>OTHER HI-DEF GIFS</h1>
+    <ul class="cf mln pln">
       {% for post in paginator.posts %}
-        <li class="hide-first">
-          <a href="{{ post.url }}" title="{{post.title}}">
-            <p class="h2">{{ post.title }}</p>
+        <li class="fl wi-33 wi-20-ns">
+          <a href="{{ post.url }}" title="{{post.title}}" class="link db dim">
+            <img src="{{ post.thumbnail }}" class="db">
           </a>
         </li>
       {% endfor %}
