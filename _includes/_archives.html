@@ -1,12 +1,11 @@
-<article class="padto2 padbo2">
-  <div class="content">
-  <h1 class="marbo small title">Archives</h1>
-  <ul class="marbo2">
-    {% for post in site.posts limit: 25 %}
-      <li class="archive-list-i marbo ">
-        <a href="{{ post.url }}" title="{{post.title}}" class="h2">
-          <date datetime="{{post.date}}" class="no-highlight small db caps mdgry">{{ post.date | date_to_long_string }}</date>
-          {{ post.title }}
+<article class="pbx">
+  <div>
+  <h1>The Complete Archives</h1>
+  <ul class="cf mln pln">
+    {% for post in site.posts %}
+      <li class="fl wi-33 wi-20-ns">
+        <a href="{{ post.url }}" title="{{post.title}}" class="link db dim">
+          <img src="{{ post.thumbnail }}" class="db">
         </a>
       </li>
     {% endfor %}

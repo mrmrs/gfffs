@@ -1,15 +1,14 @@
-<article class="marbo">
-  <div class="content">
-  <h1 class="small caps marbo">More Gifs</h1>
-  <ul>
-  {% for post in site.related_posts limit: 3 %}
-    <li class="marbo">
-      <a href="{{ post.url }}" title="{{post.title}}">
-        <span class="small db title caps">{{ post.date | date_to_long_string }}</span>
-          {{ post.title }}
-      </a>
-    </li>
-  {% endfor %}
-  </ul>
-</div>
-</article>
+<section class="center mw8">
+  <div class="phs phn-l pvl pvx-ns">
+    <h1 class="small ttu">More Gifs</h1>
+    <ul class="cf mln pln">
+      {% for post in site.related_posts limit: 4 %}
+      <li class="fl wi-50 wi-25-ns">
+        <a href="{{ post.url }}" title="{{post.title}}" class="dim">
+          <img src="{{ post.thumbnail }}" class="db">
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
