@@ -1,28 +1,17 @@
-/* ==========================================================================
+/*
 
-   SITE STYLES
-   ========================================================================== */
-body,html {height:100%;}
-img {width:100%;}
-.db {display:block;}
-.dib {display:inline-block;}
+  STYLES
 
-.content {
-  max-width: 720px;
-  margin:0 auto;
-  padding:0 20px;
-}
+  Add custom styles here.
 
-   
-ul {list-style-type:none;margin:0;padding:0;}
-.hide-first:first-child {display:none;}
-.title-link {color:$mdgry!important;}
+*/
 
-.site-footer a {
-  color:$mdgry;
-  &:hover {color:$pink;}
-}
+a:link,
+a:hover,
+a:visited,
+a:active,
+a:focus { text-decoration: none; }
 
-.archive-list-i {
-  line-height:2;
-}
+img { width: 100%; }
+
+ul { list-style: none; }
